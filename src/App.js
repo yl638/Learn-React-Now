@@ -3,7 +3,7 @@ import axios from "axios";
 import "./App.css";
 
 function App() {
-    const url = 'http://localhost:8080/api/Messages'
+    const url = 'http://localhost:8080/Messages/102'
     const [Message, setMessages] = useState(null);
     useEffect(() => {
         axios.get(url)
@@ -24,7 +24,5 @@ function App() {
         </div>
         )
 }
-
-export default App;
 
 export default App;

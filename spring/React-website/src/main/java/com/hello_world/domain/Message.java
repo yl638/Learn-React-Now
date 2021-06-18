@@ -1,15 +1,20 @@
 package com.hello_world.domain;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table
 public class Message {
 	
-	
+	@Id
+	@Column
 	private int id;
+	@Column
 	private String theMessage;
 	
-	public Message(int id, String theMessage) {
-		this.id = id;
-		this.theMessage = theMessage;
-	}
 	public int getId() {
 		return id;
 	}
